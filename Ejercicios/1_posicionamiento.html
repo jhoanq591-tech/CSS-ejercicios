@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1_posicionamiento</title>
+    <style>
+
+      body,html {
+        margin: 0;
+        padding: 0;
+        background-color: darkblue;
+        height: 100%;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .cuerpos {
+        min-height: 200vh;
+        padding: 0;
+      }
+
+      .segundo {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        border-left: 2px solid #000040;
+      }
+
+      .primero {
+        padding: 12px 20px;
+        font-size: 18px;
+        background-color: #f0f8ff;
+        border-bottom: 1px solid #add8e6;
+        box-sizing: border-box;
+      }
+
+      .primero.pegajoso {
+        background-color: #ffead0; 
+        position: sticky; 
+        
+        top: 0;
+        z-index: 100;
+        font-weight: 500;
+      }
+
+      .primero.estatico {
+        position: static;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="cuerpos">
+      <div class="segundo">
+        <div class="primero pegajoso">Pegajoso</div>
+        <div class="primero estatico">Estatico</div>
+        <div class="primero estatico">Estatico</div>
+        <div class="primero estatico">Estatico</div>
+        <div class="primero estatico">Estatico</div>
+      </div>
+    </div>
+</body>
+</html>
